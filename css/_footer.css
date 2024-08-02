@@ -1,0 +1,124 @@
+.footer {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.education {
+  flex: 0 0 268px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.education__content-block {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.education__education {
+  flex: 0 0 116px;
+  background-color: var(--app-bg-light);
+  border-radius: 10px;
+  padding: 8px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 8px;
+  height: fit-content;
+}
+
+.education__education:first-child {
+  background-color: var(--app-bg-secondary);
+  color: var(--app-txt-primary-light);
+}
+
+.education__top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font: var(--app-font-display-xs-medium);
+}
+
+.education__education:first-child .education__icon {
+  display: flex;
+}
+
+.education__icon {
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.education__content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.education__title-content {
+  font: var(--app-font-display-xs-medium);
+}
+
+.education__education:first-child .education__tags {
+  color: var(--app-txt-secondary-light);
+}
+
+.education__tags {
+  font: var(--app-font-display-xxs-regular);
+  color: var(--app-txt-additional);
+}
+
+.education__school-name {
+  font: var(--app-font-display-xxs-regular);
+  line-height: 12px;
+}
+
+.extra-box {
+  flex: 0 1 auto;
+  max-width: 100%;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.interests {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.interests__content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.interests__tag {
+  padding: 4px 10px;
+  font: var(--app-font-display-xs-regular);
+  background-color: var(--app-bg-light);
+  border-radius: 40px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  background-color: var(--app-bg-dark);
+  color: var(--app-txt-primary-light);
+}
+
+.contact__content {
+  color: var(--app-txt-secondary-dark);
+  font: var(--app-font-display-xs-regular);
+  word-break: break-all;
+}

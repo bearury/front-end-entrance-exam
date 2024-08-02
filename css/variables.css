@@ -1,6 +1,44 @@
 :root {
+  --app-light: #ffffff;
+  --app-dark: #000000;
+
   --app-bg-primary: #f0f0f0;
   --app-bg-secondary: #28d979;
+  --app-bg-light: #ffffff;
+  --app-bg-dark: var(--app-dark);
+  --app-bg-label: #7e731266;
 
   --app-txt-secondary: #5c5c5c;
+  --app-txt-light: #3f3d3d;
+  --app-txt-secondary-dark: #dddddd;
+  --app-txt-primary-light: var(--app-light);
+  --app-txt-secondary-light: #ebf9f2;
+  --app-txt-label: #ddf163;
+  --app-txt-additional: #149063;
+
+  --app-font: Poppins, Arial, sans-serif;
+
+  /* 14 */
+  --app-font-display-m: 0.875rem var(--app-font);
+  --app-font-display-m-regular: 400 var(--app-font-display-m);
+  --app-font-display-m-medium: 500 var(--app-font-display-m);
+  --app-font-display-m-semibold: 600 var(--app-font-display-m);
+
+  /* 12 */
+  --app-font-display-s: 0.75rem var(--app-font);
+  --app-font-display-s-regular: 400 var(--app-font-display-s);
+  --app-font-display-s-medium: 500 var(--app-font-display-s);
+  --app-font-display-s-semibold: 600 var(--app-font-display-s);
+
+  /* 10 */
+  --app-font-display-xs: 0.625rem var(--app-font);
+  --app-font-display-xs-regular: 400 var(--app-font-display-xs);
+  --app-font-display-xs-medium: 500 var(--app-font-display-xs);
+  --app-font-display-xs-semibold: 600 var(--app-font-display-xs);
+
+  /* 8 */
+  --app-font-display-xxs: 0.5rem var(--app-font);
+  --app-font-display-xxs-regular: 400 var(--app-font-display-xxs);
+  --app-font-display-xxs-medium: 500 var(--app-font-display-xxs);
+  --app-font-display-xxs-semibold: 600 var(--app-font-display-xxs);
 }

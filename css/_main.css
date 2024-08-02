@@ -1,0 +1,128 @@
+.main {
+  margin-top: 20px;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.experience {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 16px;
+}
+
+.experience__joblist {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.experience__jobitem {
+  padding: 8px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 8px;
+  background-color: var(--app-bg-light);
+}
+
+.experience__jobitem:first-child {
+  background-color: var(--app-bg-secondary);
+  color: var(--app-txt-primary-light);
+}
+
+.experience__topbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font: var(--app-font-display-xxs-medium);
+}
+
+.experience__jobitem:first-child .experience__top {
+  display: block;
+}
+
+.experience__top {
+  display: none;
+  background-color: var(--app-bg-label);
+  padding: 2px 6px;
+  border-radius: 60px;
+  color: var(--app-txt-label);
+}
+
+.experience__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 8px;
+}
+
+.experience__jobinfo {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 124px;
+}
+
+.experience__role-name {
+  font: var(--app-font-display-xs-medium);
+  line-height: 15px;
+}
+.experience__about-job {
+  font: var(--app-font-display-xxs-regular);
+  line-height: 12px;
+  color: var(--app-txt-light);
+}
+
+.experience__jobitem:first-child .experience__about-job {
+  color: var(--app-txt-secondary-light);
+}
+
+.experience__featured-points {
+  font: var(--app-font-display-xxs-regular);
+  line-height: 12px;
+  list-style-type: disc !important;
+  padding-left:  10px;
+}
+
+.tools__content {
+  list-style-type: none;
+}
+
+.tools__item {
+  width: 76px;
+  padding: 12px;
+  margin: 12px;
+  background-color: var(--app-bg-light);
+  border-radius: 6px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-content: center;
+
+  grid-gap: 12px 6px;
+}
+
+.tools__item:last-child {
+  margin-bottom: 0;
+}
+
+.tools__icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img{
+    width: 80%;
+    height: 80%;
+  }
+}
