@@ -8,7 +8,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint",
-    "lint:fix": "eslint --fix"
+    "lint:fix": "eslint --fix",
+    "deploy": "git subtree push --prefix dist origin gh-pages"
   },
   "devDependencies": {
     "@eslint/compat": "^1.1.1",
