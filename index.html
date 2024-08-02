@@ -4,10 +4,48 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Resume</title>
   </head>
   <body>
-    <div id="app"></div>
+    <header class="header">
+      <div class="container header-content">
+        <div class="poster">
+          <img src="poster.png" alt="poster" />
+        </div>
+
+        <div class="greeting">
+          <div class="greeting__phrase">Hello 👋🏻 I’m</div>
+          <div class="greeting__user">
+            <div class="greeting__name">Karthik SR</div>
+            <div class="greeting__role">UX/UI Designer</div>
+          </div>
+        </div>
+
+        <div class="languages">
+          <div class="languages__title">Languages</div>
+          <div class="languages__list">
+            <div class="languages__item">
+              <div class="languages__item-name">English</div>
+              <div class="languages__item-level"></div>
+            </div>
+            <div class="languages__item">
+              <div class="languages__item-name">Malayalam</div>
+              <div class="languages__item-level"></div>
+            </div>
+            <div class="languages__item">
+              <div class="languages__item-name">Hindi</div>
+              <div class="languages__item-level"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
     <script type="module" src="./js/main.js"></script>
   </body>
 </html>
