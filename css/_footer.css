@@ -122,3 +122,13 @@
   font: var(--app-font-display-xs-regular);
   word-break: break-all;
 }
+
+@media (max-width: 510px) {
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .education__content-block {
+    justify-content: center;
+  }
+}

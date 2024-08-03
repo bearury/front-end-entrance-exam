@@ -41,4 +41,10 @@
   --app-font-display-xxs-regular: 400 var(--app-font-display-xxs);
   --app-font-display-xxs-medium: 500 var(--app-font-display-xxs);
   --app-font-display-xxs-semibold: 600 var(--app-font-display-xxs);
+
+  /* 5 */
+  --app-font-display-3xs: 0.313rem var(--app-font);
+  --app-font-display-3xs-regular: 400 var(--app-font-display-3xs);
+  --app-font-display-3xs-medium: 500 var(--app-font-display-3xs);
+  --app-font-display-3xs-semibold: 600 var(--app-font-display-3xs);
 }

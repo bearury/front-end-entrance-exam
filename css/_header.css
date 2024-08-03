@@ -2,6 +2,13 @@
   margin-top: 15px;
 }
 
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
 .poster {
   width: 124px;
   height: 124px;
@@ -102,9 +109,13 @@
   width: 80%;
 }
 
-.header-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
+@media (max-width: 510px) {
+  .header-content {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .greeting {
+    flex: 1 1 auto;
+  }
 }
