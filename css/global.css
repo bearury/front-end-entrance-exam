@@ -32,3 +32,36 @@ body {
   border-radius: 12px;
   background-color: var(--app-bg-primary);
 }
+
+.button {
+  background-color: var(--app-bg-secondary);
+  color: var(--app-txt-primary-light);
+  padding: 3px 16px;
+  border-radius: 60px;
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.editing {
+  cursor: pointer;
+}
+
+.animation {
+  animation: animation 0.5s ease-in-out;
+}
+
+@keyframes animation {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

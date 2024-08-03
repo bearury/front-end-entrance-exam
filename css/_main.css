@@ -91,6 +91,10 @@
   padding-left: 10px;
 }
 
+.tools {
+  flex: 0 0 auto;
+}
+
 .tools__content {
   list-style-type: none;
   display: flex;

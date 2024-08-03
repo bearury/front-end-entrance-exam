@@ -25,13 +25,11 @@
 .greeting {
   width: 124px;
   height: 124px;
-  border-radius: 12px;
-  background-color: var(--app-bg-primary);
-  padding: 12px;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 .greeting__phrase {
