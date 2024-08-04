@@ -1,32 +1,42 @@
 import data from './data';
 
-const itemLS = "entrance-exam-web-js-master";
-
+const itemLS = 'entrance-exam-web-js-master';
 const editing = document.querySelectorAll('.editing');
+const waveContainerElements = document.querySelectorAll('.wave-container');
 
-editing.forEach(item => {
-	item.addEventListener('click', (event) => {
-		const htmlElement =  event.target;
-
-		const newValue = prompt('Введите новое значение', '');
-
-		if (!newValue || newValue.length <= 0) {
-			return;
+waveContainerElements.forEach(elem => {
+	elem.addEventListener('click', (event) => {
+		const className = 'wave-active';
+		if (elem.classList.contains(className)) {
+			elem.classList.remove(className);
 		}
 
-		htmlElement.classList.add('animation')
+		const currentWaveContainerElement = event.currentTarget;
+		const waveCurrentElement = currentWaveContainerElement.querySelector('.wave');
+		const targetElement = event.target;
 
-		data[htmlElement.id] = newValue;
+		if (targetElement.classList.contains('editing')) {
+			const newValue = prompt('Enter new value', '');
 
-		localStorage.setItem(itemLS, JSON.stringify(data))
+			if (!newValue || newValue.length <= 0) {
+				return;
+			}
 
-		htmlElement.textContent = newValue;
-	})
-})
+			targetElement.classList.add('animation');
+			data[targetElement.id] = newValue;
+			localStorage.setItem(itemLS, JSON.stringify(data));
+			targetElement.textContent = newValue;
+		} else {
+			waveCurrentElement.style.left = `${event.clientX - currentWaveContainerElement.offsetLeft}px`;
+			waveCurrentElement.style.top = `${event.clientY - currentWaveContainerElement.offsetTop}px`;
+			elem.classList.add(className);
+		}
+	});
+});
 
 editing.forEach(item => {
 	item.addEventListener('animationend', (event) => {
-		const htmlElement =  event.target;
+		const htmlElement = event.target;
 		htmlElement.classList.remove('animation');
-	})
-})
+	});
+});

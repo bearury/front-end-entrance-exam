@@ -20,7 +20,8 @@
             <img src="poster.webp" alt="poster" />
           </div>
 
-          <section class="greeting card">
+          <section class="greeting card wave-container">
+            <div class="wave"></div>
             <div id="greetingPhrase" class="greeting__phrase editing">Hello 👋🏻 I’m</div>
             <div class="greeting__user">
               <h3 id="greetingName" class="greeting__name editing">Karthik SR</h3>
@@ -29,18 +30,18 @@
           </section>
 
           <section class="languages card">
-            <h3 class="languages__title">Languages</h3>
+            <h3 id="languagesTitle" class="languages__title editing">Languages</h3>
             <ul class="languages__list">
               <li class="languages__item">
-                <div class="languages__item-name">English</div>
+                <div id="languagesItem#1" class="languages__item-name editing">English</div>
                 <div class="languages__item-level"></div>
               </li>
               <li class="languages__item">
-                <div class="languages__item-name">Malayalam</div>
+                <div id="languagesItem#2" class="languages__item-name editing">Malayalam</div>
                 <div class="languages__item-level"></div>
               </li>
               <li class="languages__item">
-                <div class="languages__item-name">Hindi</div>
+                <div id="languagesItem#3" class="languages__item-name editing">Hindi</div>
                 <div class="languages__item-level"></div>
               </li>
             </ul>
@@ -294,7 +295,7 @@
       </footer>
     </div>
     <button class="button" id="downloadButton">Download PDF</button>
-    
+
     <svg style="display: none" xmlns="http://www.w3.org/2000/svg">
       <symbol id="tools-figma" viewBox="0 0 11 15">
         <path
