@@ -7,8 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "eslint",
-    "lint:fix": "eslint --fix",
+    "lint": "eslint js",
+    "lint:fix": "eslint js --fix",
+    "format": "prettier --write ./",
     "deploy": "git subtree push --prefix dist origin gh-pages"
   },
   "devDependencies": {

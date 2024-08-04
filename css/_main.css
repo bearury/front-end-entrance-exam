@@ -9,6 +9,7 @@
 }
 
 .experience {
+  flex: 1 1 auto;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -59,7 +60,7 @@
 
 .experience__content {
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   align-items: start;
   gap: 8px;
 }

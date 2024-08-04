@@ -1,11 +1,11 @@
-import { defineConfig } from 'vite'
+import { defineConfig } from 'vite';
 
 export default defineConfig({
-	build: {
-		sourcemap: true,
-	},
-	base: './',
-	css: {
-		devSourcemap: true,
-	},
-})
+  build: {
+    sourcemap: true,
+  },
+  base: './',
+  css: {
+    devSourcemap: true,
+  },
+});

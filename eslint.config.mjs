@@ -8,64 +8,75 @@ import { FlatCompat } from '@eslint/eslintrc';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const compat = new FlatCompat({
-	baseDirectory: __dirname,
-	recommendedConfig: js.configs.recommended,
-	allConfig: js.configs.all,
+  baseDirectory: __dirname,
+  recommendedConfig: js.configs.recommended,
+  allConfig: js.configs.all,
 });
 
-export default [...fixupConfigRules(compat.extends(
-	'airbnb-base',
-	'eslint:recommended',
-	'plugin:import/recommended',
-	'eslint-config-prettier',
-)), {
-	languageOptions: {
-		globals: {
-			...globals.browser,
-		},
+export default [
+  ...fixupConfigRules(
+    compat.extends('airbnb-base', 'eslint:recommended', 'plugin:import/recommended', 'eslint-config-prettier'),
+  ),
+  {
+    languageOptions: {
+      globals: {
+        ...globals.browser,
+      },
 
-		ecmaVersion: 'latest',
-		sourceType: 'module',
-	},
-	ignores: ['dist/*'],
-	rules: {
-		indent: [2, 'tab'],
-		semi: 'off',
-		'no-tabs': 0,
+      ecmaVersion: 'latest',
+      sourceType: 'module',
+    },
 
-		'object-curly-newline': ['error', {
-			ObjectPattern: {
-				multiline: true,
-			},
+    rules: {
+      indent: ['error', 2],
+      semi: 'off',
+      'no-tabs': 0,
 
-			ImportDeclaration: 'never',
+      'object-curly-newline': [
+        'error',
+        {
+          ObjectPattern: {
+            multiline: true,
+          },
 
-			ExportDeclaration: {
-				multiline: true,
-				minProperties: 8,
-			},
-		}],
+          ImportDeclaration: 'never',
 
-		'import/prefer-default-export': 'off',
-		'no-param-reassign': 'off',
-		'import/no-extraneous-dependencies': 'off',
-		'class-methods-use-this': 'off',
-		'no-new': 'off',
-		'no-restricted-syntax': ['error', 'BinaryExpression[operator=\'in\']'],
+          ExportDeclaration: {
+            multiline: true,
+            minProperties: 8,
+          },
+        },
+      ],
 
-		'import/extensions': ['error', 'ignorePackages', {
-			json: 'never',
-			js: 'never',
-		}],
+      'import/prefer-default-export': 'off',
+      'no-param-reassign': 'off',
+      'import/no-extraneous-dependencies': 'off',
+      'class-methods-use-this': 'off',
+      'no-new': 'off',
+      'no-restricted-syntax': ['error', "BinaryExpression[operator='in']"],
 
-		'no-return-assign': 'off',
-		'no-constructor-return': 'off',
-		'import/no-cycle': 'off',
-		'guard-for-in': 'off',
+      'import/extensions': [
+        'error',
+        'ignorePackages',
+        {
+          json: 'never',
+          js: 'never',
+        },
+      ],
 
-		'max-len': ['error', {
-			code: 150,
-		}],
-		'no-underscore-dangle': 'off',
-	},
-}];
+      'no-return-assign': 'off',
+      'no-constructor-return': 'off',
+      'import/no-cycle': 'off',
+      'guard-for-in': 'off',
+
+      'max-len': [
+        'error',
+        {
+          code: 150,
+        },
+      ],
+      'no-underscore-dangle': 'off',
+      'no-alert': 'off'
+    },
+  },
+];

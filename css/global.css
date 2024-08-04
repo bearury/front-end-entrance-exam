@@ -43,6 +43,7 @@ body {
   border-radius: 100%;
   transform: scale(0);
   background-color: rgba(123, 255, 255, 0.6);
+  z-index: 1;
 }
 
 .wave-active .wave {
@@ -78,7 +79,6 @@ body {
 .editing:hover {
   opacity: 0.5;
   transition: opacity 0.3s ease 0s;
-
 }
 
 .animation {
